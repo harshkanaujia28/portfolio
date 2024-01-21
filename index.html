@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="con">
+      <div class="container">
+        <h3>Harsh</h3>
+        <nav>
+          <ul id="sidemenu">
+            <li><a class="span">Home</a></li>
+            <li><a href="#About" class="p">About Me</a></li>
+            <li><a href="#services" class="p">Services</a></li>
+            <li><a href="#portfolio" class="p">Project</a></li>
+            <li><a href="#contact" class="p">Contact Me</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+      </div>
+      <div class="center">
+        <div class="content">
+          <h4 class="hello">Hello,I am</h4>
+          <h1 class="name">Harsh kanaujia</h1>
+          <h2 class="dev">
+            And I'm a <span class="front">Frontent Devloper</span>
+          </h2>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------------------------------------------------------------------About me-------------------------------------------------------------------------------------------------------- -->
+    <div id="About">
+      <div class="container2">
+        <div class="row">
+          <div class="img">
+            <img
+              src="WhatsApp_Image_2024-01-18_at_2.20.38_PM-removebg-preview-removebg-preview.png"
+              alt=""
+            />
+          </div>
+          <div class="img2">
+            <h1>About me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+              excepturi, iure asperiores nesciunt perspiciatis accusantium
+              earum, nisi corrupti officia quos incidunt, blanditiis aperiam
+              culpa saepe a delectus praesentium inventore animi. Quas atque
+              ullam eligendi mollitia est, harum dolores nam reiciendis
+              voluptatum hic unde officiis laboriosam debitis aliquam blanditiis
+              beatae eveniet
+            </p>
+            <div class="tab-tittle">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App interface</li>
+                <li>
+                  <span>Web Development</span><br />Designing Web/App interface
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2023</span><br />BCA from COLLEGE OF MANAGEMENT STUDIES
+                  RAGENDRA SWARUP ,kanpur nager
+                </li>
+                <li><span>2020</span><br />Higher secondary education</li>
+                <li><span>2019</span><br />High school</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------------------------------------------------------------------------services--------------------------------------------------------------------------------------- -->
+    <div id="services">
+      <div class="container3">
+        <h1>My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>web Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- --------------------------------------------------------------------------portfolio-------------------------------------------------------------------- -->
+    <div id="portfolio">
+      <div class="container2">
+        <h1>My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="WhatsApp Image 2024-01-19 at 5.34.11 PM.jpeg" alt="" />
+            <div class="layer">
+              <h2>Social Media App</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Numquam perferendis quia inventore ut quis porro sint unde.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="WhatsApp Image 2024-01-19 at 5.30.12 PM.jpeg" alt="" />
+            <div class="layer">
+              <h2>Music App</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Numquam perferendis quia inventore ut quis porro sint unde.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="WhatsApp Image 2024-01-19 at 5.20.27 PM.jpeg" alt="" />
+            <div class="layer">
+              <h2>Online Shoping App</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Numquam
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    <!-- --------------------------------------------------------------------------------------------contact me-------------------------------------------------------------------------------------- -->
+    <div id="contact">
+      <div class="container3">
+        <h1 class="sub-title">Contact Me</h1>
+        <div class="row">
+          <div class="contact-left">
+            <p>
+              <i class="fa-solid fa-paper-plane" id="fa"></i
+              >harshkanaujia537@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone" id="fa"></i>9336269689</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="clp9jvxju0ojxswgl0gu6l61l (2).pdf" download=""
+              ><button class="size">Download CV</button></a
+            >
+          </div>
+          <div class="contact-right">
+            <form
+            name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="size">submit</button>
+            </form>
+            <span id="msg"> </span>
+          </div>
+        </div>
+        /
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Made width<i class="fa-solid fa-heart"></i> By Harsh kanaujia</p>
+    </div>
+    <script src="index.js"></script>
+    <script>
+      const scriptURL =
+      "https://script.google.com/macros/s/AKfycbzXjEufLbHpyPl9JiV_oZYj4i7LkoptfY83Li_mnZ5IhxM2kDWSSkm8AeeV8Yz1y8XOoA/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg")
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then(response=>{
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function() {
+              msg.innerHTML = " "
+              
+            }, 5000);
+            form.reset()
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
