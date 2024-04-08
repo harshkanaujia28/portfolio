@@ -9,7 +9,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #161a1e;
+  background-color: #393c3f;
 }
 .con {
   height: 100vh;
@@ -25,16 +25,17 @@ body {
 }
 
 .span {
-  color: #0092ca;
+  color:#eef3f4;
   text-decoration: none;
   cursor: pointer;
 }
 h3 {
-  font-size: 18px;
-  color: #0092ca;
+  font-size: 25px;
+  color:#0092ca;
   margin-bottom: 5px;
   margin-left: 10px;
-  text-shadow: 0px 0px 5px rgb(123, 209, 235);
+  text-shadow: 0px 0px 5px rgb(239, 232, 239);
+  font-weight: 700;
 }
 .content {
   align-items: center;
@@ -42,49 +43,50 @@ h3 {
   padding-top: 30px;
 }
 .hello {
-  color: white;
+  color:rgb(255, 255, 255);
   font-size: 40px;
   font-family: Montserrat;
 }
 .name {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 55px;
   font-weight: 700;
   font-family: Montserrat;
 }
 .dev {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 40px;
   font-family: Montserrat;
 }
 .word {
   font-size: 20px;
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: Montserrat;
 }
 
 .p {
   margin-left: 25px;
-  color: white;
+  color: #0092ca;
   cursor: pointer;
   text-decoration: none;
   font-family: Montserrat;
+  font-weight: 400;
 }
 .p:hover {
-  color: rgb(123, 209, 235);
+  color: rgb(255, 254, 255);
   font-size: 0.9rem;
 }
 .center {
-  display: flex;
-  margin-left: 130px;
-  margin-top: 40px;
+  margin-top: 200px;
+  margin-left: 50px;
+ 
 }
 .me {
   height: 20px;
   width: 40px;
 }
 .front {
-  color: #0092ca;
+  color:#0092ca;
   font-size: 45px;
 }
 
@@ -120,7 +122,7 @@ h3 {
 }
 .size:hover {
   background-color: #222f3d;
-  color: #0092ca;
+  color:#0092ca;
   border: 2px solid #0092ca;
 }
 .contact {
@@ -163,10 +165,10 @@ h3 {
   margin-left: 40px;
 }
 .btn {
-  height: 30px;
+  height: 50px;
   width: 100px;
   margin-left: 200px;
-  margin-top: 20px;
+  margin-top: 20px;  
   background-color: #0092ca;
   border: none;
   border-radius: 20px;
@@ -174,6 +176,8 @@ h3 {
   font-family: Montserrat;
   font-weight: 200;
   cursor: pointer;
+  display: none;
+  text-align: center;
 }
 .btn:hover {
   background-color: #222f3d;
@@ -190,7 +194,7 @@ h3 {
   font-family: Montserrat;
 }
 .form-label {
-  color: #0092ca;
+  color:#0092ca;
 }
 
 /* skills page style*/
@@ -239,9 +243,9 @@ nav ul li {
   flex-wrap: wrap;
 }
 .container2 {
-  background-color: #161a1e;
-  
+  background-color:#393c3f;
   padding: 10px, 10%;
+
 }
 .row {
   display: flex;
@@ -251,9 +255,22 @@ nav ul li {
 .img {
   flex-basis: 35%;
 }
+#html{
+  color: #f1922b;
+}
+#css{
+  color: #4672f8;
+}
+#js{
+  color: #f1d32b;
+}
+#react{
+  color: #2be0f1;
+}
 img {
   width: 100%;
-  height: 600px;
+  height:600px;
+  width: 450px;
   border-radius: 15px;
   margin-left: 25px;
   margin-top: 25px;
@@ -263,11 +280,11 @@ img {
   margin-top: 25px;
 }
 p {
-  color: white;
+  color: rgb(255, 253, 253);
   font-size: 15px;
 }
 h1 {
-  color: #0092ca;
+  color:#0092ca;
   font-size: 40px;
   font-weight: 600;
 }
@@ -296,14 +313,14 @@ h1 {
   width: 50%;
 }
 .tab-contents ul li {
-  color: white;
+  color: rgb(255, 251, 251);
   list-style: none;
   margin: 10px 0;
   font-size: 15px;
 }
 .tab-contents ul li span {
   color: #0092ca;
-  font-weight: 500;
+  font-weight: 800;
 }
 .tab-contents {
   display: none;
@@ -314,18 +331,17 @@ h1 {
 /* ----------------------------------------------------------------------------------------services----------------------------------------------------------------------------------- */
 #services {
   padding: 30px 0;
-  margin-left: 40px;
+  margin-left: 50px;
 }
 .services-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 0.3fr));
-  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 0.94fr));;
+  grid-gap: 40px;
   margin-top: 50px;
-  margin-left: 30px;
   color: white;
 }
 .services-list div {
-  background: #262626;
+  background: #101010;
   padding: 40px;
   font-size: 13px;
   font-weight: 300px;
@@ -350,27 +366,63 @@ h1 {
   cursor: pointer;
 }
 .services-list div:hover {
-  background: #0092ca;
+  background:#0092ca;
   transform: translateY(-10px);
+  span{
+    color:#222f3d
+  }
 }
 /* -----------------------------------------------------------------------------------portfolio------------------------------------------------------------------------------------- */
+
 .container2 {
-  padding: 10px, 10%;
+  padding: 10px 10%;;
   margin-top: 30px;
-  margin-left: 50px;
+  
 }
 .work-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 0.3fr));
-  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
   margin-top: 50px;
 }
+.work-list1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  margin-top: 50px;
+}
+
 .work {
   border-radius: 10px;
   overflow: hidden;
   position: relative;
   flex-wrap: wrap;
 }
+.work1 {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  flex-wrap: wrap;
+}
+.work2 {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  flex-wrap: wrap;
+}
+.work3 {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  flex-wrap: wrap;
+}
+.work4 {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  flex-wrap: wrap;
+}
+
 .work img {
   width: 100%;
   height: 100%;
@@ -378,6 +430,42 @@ h1 {
   display: block;
   transition: transform 0.5s;
   cursor: pointer;
+}
+.work1 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+  cursor: pointer;
+  
+}
+.work2 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+  cursor: pointer;
+ 
+}
+.work3 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+  cursor: pointer;
+  display: none;
+}
+.work4 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+  cursor: pointer;
+  display: none;
 }
 .layer {
   position: absolute;
@@ -397,12 +485,13 @@ h1 {
   transition: height 0.5s;
 }
 .layer h2 {
-  color: #0092ca;
+  color:#0092ca;
   margin-bottom: 20px;
+  font-size: 20px;
 }
 .layer a {
   margin-top: 20px;
-  background: white;
+  background: #fdfeff;
   text-decoration: none;
   font-size: 18px;
   line-height: 60px;
@@ -410,39 +499,91 @@ h1 {
   height: 60px;
   line-height: 60px;
   border-radius: 50%;
-  color: #0092ca;
+  color:#0092ca;
   text-align: center;
 }
-.work:hover img {
+
+.work1:hover .layer {
+  height: 100%;
+}.work1:hover img {
   transform: scale(1.2);
 }
 .work:hover .layer {
   height: 100%;
+}.work:hover img {
+  transform: scale(1.2);
 }
+.work2:hover img {
+  transform: scale(1.2);
+}
+.work2:hover .layer {
+  height: 100%;
+}
+.work3:hover img {
+  transform: scale(1.2);
+}
+.work3:hover .layer {
+  height: 100%;
+}
+.work4:hover img {
+  transform: scale(1.2);
+}
+.work4:hover .layer {
+  height: 100%;
+}
+
+
 .layer p {
   color: #222f3d;
   font-weight: 300;
 }
+.work2 .layer p{
+  color: white;
+}
+
 .btn {
   display: block;
-  margin: 50px auto;
+  margin: 30px auto;
   width: fit-content;
   border: 1px solid #0092ca;
-  padding: 14px 50px;
+  padding: 5px 50px;
   border-radius: 6px;
   color: white;
   font-size: 15px;
   text-decoration: none;
   text-align: center;
   transition: background 0.5s;
+  display: block;
+
 }
+.btn5 {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #0092ca;
+  padding: 22px 55px;
+  border-radius: 6px;
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.5s;
+  display: none;
+  background-color: #0092ca;
+}
+
+
 .btn i {
   font: 15px;
   margin-left: 10px;
 }
 .btn:hover {
-  background-color: #222f3d;
+  background-color: #2b2020;
 }
+.btn5:hover {
+  background-color: #2b2020;
+}
+
 /* --------------------------------------------------------------------------------------------------------------contact----------------------------------------------------- */
 #contact {
   margin-left: 100px;
@@ -460,6 +601,7 @@ h1 {
   color: #0092ca;
   margin-right: 15px;
   font-size: 25px;
+  font-weight: 700;
 }
 .social-icons a {
   text-decoration: none;
@@ -472,7 +614,7 @@ h1 {
 }
 .social-icons a:hover {
   color: #0092ca;
-  background-color: #222f3d;
+  background-color: #bdb6c4;
   transform: translate(-5px);
 }
 .contact-right form {
@@ -504,7 +646,7 @@ form textarea {
 @media screen and (max-width: 1120px) {
   .con {
     height: 700px;
-    background-image: url(https://www.eloahealthtourism.com/app/uploads/treatment_category/new-project--4--213--7--176.jpg);
+    background-image: url("WhatsApp Image 2024-04-07 at 5.01.58 PM.jpeg");
     background-size: cover;
   }
   nav .fa-solid {
@@ -539,7 +681,7 @@ form textarea {
     top: 25px;
     left: 25px;
     cursor: pointer;
-    color: #0092ca;
+    color:#0092ca;
   }
   .hello {
     color: white;
@@ -633,5 +775,30 @@ form textarea {
   color: rgb(128, 212, 128);
   margin-top: -40px;
   display: block;
+}
+span{
+  color:#0092ca;
+  font-weight: 800;
+}
+.read{
+  display: none;
+}
+button{
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.btn1{
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.read2{
+  display: none;
+}
+.read3{
+  display: none;
 }
 
