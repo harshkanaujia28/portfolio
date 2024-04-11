@@ -21,16 +21,16 @@ function opentab(tabname) {
 }
 
 
+
+
 let work = document.querySelector(".work1 img")
 let work1 = document.querySelector(".work2 img")
 let work2 = document.querySelector(".work3 img")
 let work3 = document.querySelector(".work4 img")
 let btn =  document.querySelector(".btn")
-
-  function readme(){
- btn.innerHTML ="See Less"
-
-  work2.style.display="block"
+function readme(){
+   btn.innerHTML ="See Less"
+   work2.style.display="block"
   work3.style.display="block"
   btn.style.display="none"
 }
